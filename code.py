@@ -3,7 +3,7 @@ from time import time
 start_time = time()
 
 length = 10
-letters = 'RLRLLRLLRR'
+letters = 'LRRRRR'
 
 list_letters = [letter for letter in enumerate(letters)]
 count_R = letters.count('R')
@@ -14,6 +14,9 @@ positions_L = [ number[0] for number in list_letters if number[1] == 'L']
 if count_R > count_L:
     if positions_L[-1] == length-1:
         print(letters[:positions_L[-1]].replace('L','R')+letters[positions_L[-1]:])
+        
+    elif positions_L[-1] == 0:
+        print(letters[positions_L[-1]:].replace('L','R'))
         
     else:
         number_R1 = letters[:positions_L[-1]].count('R')
