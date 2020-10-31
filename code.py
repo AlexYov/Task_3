@@ -5,21 +5,6 @@ start_time = time()
 length = 10
 letters = 'RLRLLRLLRR'
 
-'''первый метод решения'''
-
-#if letters.count('R') > letters.count('L'):  
-    #new_letters = letters.replace('L','R')
-    #print(new_letters)
-   
-#elif letters.count('R') < letters.count('L'):
-    #new_letters = letters.replace('R','L')
-    #print(new_letters)  
-       
-#else:
-    #pass
-    
-'''второй метод решения'''
-
 list_letters = [letter for letter in enumerate(letters)]
 count_R = letters.count('R')
 count_L = letters.count('L')
