@@ -1,6 +1,6 @@
-from time import time
+from timeit import default_timer
 
-start_time = time()
+start_time = default_timer()
 
 length = 8
 letters = 'LLRLLLRL'
@@ -42,5 +42,5 @@ elif count_R < count_L:
             print(f'Входные данные {letters}')
             print(f'Выходные данные {new_letters}')
         
-end_time = time()
+end_time = default_timer()
 print(f'Затраченное время {end_time-start_time}')
