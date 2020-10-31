@@ -24,8 +24,8 @@ if count_R > count_L:
         number_R2 = letters[positions_L[-1]:].count('R')
         if number_R1 > number_R2:
             new_letters = letters[:positions_L[-1]].replace('L','R')+letters[positions_L[-1]:].replace('R','L')
-            
-            print(new_letters)
+            print(f'Входные данные {letters}')
+            print(f'Выходные данные {new_letters}')
             
 elif count_R < count_L:
     if positions_R[-1] == length-1:
@@ -39,8 +39,8 @@ elif count_R < count_L:
         number_L2 = letters[positions_R[-1]:].count('L')
         if number_L1 > number_L2:
             new_letters = letters[:positions_R[-1]].replace('L','R')+letters[positions_R[-1]:].replace('R','L')
-            
-            print(new_letters)
+            print(f'Входные данные {letters}')
+            print(f'Выходные данные {new_letters}')
         
 end_time = time()
 print(f'Затраченное время {end_time-start_time}')
